@@ -1,0 +1,36 @@
+<header>
+  <nav class="navbar">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="float-left toggle-btn">                
+                
+            </div>
+            <div class="logo">
+                codecruzer.com
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <ul class="nav navbar-nav">        
+                <li class="hidden-md-down user"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <div *ngIf="loguser" class="profile-wrapper">
+                       {{currentUser.firstName}}!
+                    </div>
+                </li>        
+                <li *ngIf="!loguser" class="hidden-md-down"><a [routerLink]="['/login']"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+                <li *ngIf="loguser" class="hidden-md-down"><a [routerLink]="['/login']"><i class="fa fa-sign-in" aria-hidden="true"></i>Logout</a></li>
+                <li class="hidden-md-down"><a href="#"><i class="fa fa-code" aria-hidden="true"></i>HTML/CSS</a></li>                
+                <li class="hidden-md-down"><a href="#">Php</a></li>
+                <li class="hidden-md-down"><a href="#">Angular2</a></li>
+                <li><div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <app-side-menu-bar></app-side-menu-bar>        
+    </div>
+  </nav>
+</header>

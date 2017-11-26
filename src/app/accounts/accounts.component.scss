@@ -1,0 +1,39 @@
+@import "../../styles.scss";
+
+.login {
+    background: #1b2330;
+    padding: 25px;
+    color: #fff;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    h4{
+        color: $yellow-color;
+    }
+    a{
+        color: $dark-gray;
+        &:hover{
+            color: $yellow-color;
+        }
+    }
+}
+.mat-input-container{
+    width:100%;
+}
+.mat-focused .mat-input-placeholder{
+    color: $yellow-color;
+}
+.mat-input-underline {
+    background-color: $dark-gray;
+}
+.mat-input-ripple {
+    background-color: $yellow-color;
+}
+.mat-input-placeholder{
+    color: #808080;
+}
+.mat-checkbox-frame{
+ border-color:$dark-gray;    
+}
+.mat-checkbox-layout{
+    margin: 0;
+}

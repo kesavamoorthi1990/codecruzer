@@ -1,0 +1,12 @@
+<div id="sidebar-wrapper" [ngClass]="{'open': highlightedDiv === 1}" clickOutside (clickOutside)="clickoutside($event)">
+    <div id="hamburger-menu" class="" (click)="toggleHighlight(1);" [ngClass]="{'open': highlightedDiv === 1}"><span></span><span></span><span></span></div>
+    <div class="example-button-row">
+        <a class="side-brand">codecruzer.com</a>
+        <a md-button routerLink=".">Flat button</a>
+        <a md-button routerLink=".">Flat button</a>
+        <a md-button routerLink=".">Flat button</a>
+        <a md-button routerLink=".">Flat button</a>
+        <a md-button routerLink=".">Flat button</a>
+    </div>
+</div>
+<div class="overlay" [ngClass]="{'open': highlightedDiv === 1}" ></div>

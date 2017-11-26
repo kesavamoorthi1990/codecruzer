@@ -1,0 +1,82 @@
+@import "../../../styles.scss";
+
+header{
+    background-color: #1b2330;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    .navbar{
+       display: block;         
+        .logo {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1;
+            line-height: 25px;
+            padding-left: 40px;
+            cursor: pointer;
+        }   
+        ul.nav.navbar-nav {
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row-reverse;
+            a {
+                padding: 5px 15px;
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                display: block;
+                &:hover{
+                    color:$yellow-color;
+                }
+                i {
+                    margin-right: 5px;
+                }
+            }
+            .search {
+                button.btn.btn-secondary, input.form-control {
+                    border: 0;
+                    height: 30px;
+                    font-size: 13px;
+                }
+                button.btn.btn-secondary {
+                    background: $yellow-color;
+                    color: #fff;
+                }
+            }
+            .user i {
+                color: #ff8a00;
+                font-size: 28px;
+            }
+            .profile-wrapper{
+                //display: none;
+                position: absolute;
+                right: 5px;
+                top: auto;
+                width: 300px;
+                background-color: #fff;
+                border-width: 6px 0 0;
+                border-style: solid;
+                border-color:$yellow-color;
+                z-index: 1;
+                border-radius: 8px 8px 5px 5px;
+                color: #777;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+                margin-top: 10px;
+                padding: 5px 10px;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    border: 10px solid transparent;
+                    display: block;
+                    right: 15px;
+                    top: -25px;
+                    border-bottom-color: $yellow-color;
+                }
+            }
+            
+        }    
+    }
+}

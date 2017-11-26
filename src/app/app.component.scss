@@ -1,0 +1,110 @@
+@import "../styles.scss";
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #e0e0e0;
+}
+p {
+    margin-bottom: 0.5rem;
+}
+img{
+    max-width: 100%;
+}
+.mar0{
+    margin: 0 !important;
+}
+.fZ13{
+    font-size: 13px;
+    font-weight: 300;
+}
+.fw300{
+    font-weight: 300;
+}
+.y_color{
+    color: $yellow-color;
+}
+.y_bg{
+    background-color: $yellow-color;
+}
+.help-block {
+    font-size: 12px;
+    color: #f44336;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    &.open{
+        opacity: 1;
+        visibility: visible;  
+    }
+}
+app-root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.Site-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    width: 100%;
+    margin-top: 71px;
+}
+footer, header {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+
+//box shadow
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
